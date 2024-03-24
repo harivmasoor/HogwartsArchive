@@ -1,8 +1,6 @@
-<img width="1509" alt="Screenshot 2024-03-23 at 7 19 35 PM" src="https://github.com/harivmasoor/HogwartsArchive/assets/22420711/d0ceb35b-fb5f-49e0-b3b1-79fae757db26">
-
-
-
 https://github.com/harivmasoor/HogwartsArchive/assets/22420711/a7482c63-b2cd-42ed-8e80-5bc320c99c4e
+
+<img width="1509" alt="Screenshot 2024-03-23 at 7 19 35 PM" src="https://github.com/harivmasoor/HogwartsArchive/assets/22420711/d0ceb35b-fb5f-49e0-b3b1-79fae757db26">
 
 ![Screenshot 2024-03-23 at 1 59 41 PM](https://github.com/harivmasoor/HogwartsArchive/assets/22420711/39e63745-fe49-4067-a4ab-e20d9e49de85)
 # Harry Potter and the Order of the Arize Phoenix
