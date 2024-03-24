@@ -151,7 +151,7 @@ cd into your folder that includes your ssh certificate and follow the steps belo
 
     bash
 
-    +++chmod 400 "Phoenix.pem"
+    chmod 400 "Phoenix.pem"
     scp -i "Phoenix.pem" Phoenix/openinference/python/examples/llama-index.zip  ubuntu@serverURL:~/
     ssh -i "Phoenix.pem" ubuntu@serverURL
     sudo apt update
@@ -163,7 +163,7 @@ cd into your folder that includes your ssh certificate and follow the steps belo
     nano ~/.bashrc
     export OPENAI_API_KEY="your_api_key_here"
     sudo docker-compose -f compose.yml up -d
-    sudo docker-compose -f compose.yml ps+++
+    sudo docker-compose -f compose.yml ps
     
 Note: If you run into any issues - directly add the OPENAI API KEY into the backend Dockerfile and the Docker Compose File. Ensure you change the localhost in your frontend/Dockerfile and your compose.yml with your Public IP Address.
 
