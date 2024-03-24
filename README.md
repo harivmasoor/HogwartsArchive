@@ -30,13 +30,11 @@ Create a Full stack app that allows you to chat with the entire 7 Harry Potter B
 Open your terminal execute the below command:
 
     bash
-
     +++git clone https://github.com/Arize-ai/openinference+++
     
 The example we are going to focus on is the llama-index example:
 
     bash
-
     +++cd openinference/python/examples/llama-index+++
 
 #### Step 1: Get your OpenAI API Key
@@ -48,13 +46,11 @@ First, let's start by creating the embeddings. Embeddings are dense vector repre
 Go to the data directory and upload the PDF files that we want our chatbot to be able to retrieve information from. In this example, we are going to use the entire collection of Harry Potter books.
 
     bash
-
     +++cd backend/app/data+++
     
 Once you have replaced the 101.pdf file with your source material, navigate back to the backend folder:
 
     bash
-
     +++cd ..
     cd ..+++
     
@@ -64,7 +60,6 @@ You should be in your backend folder now. Create a new .env file and paste your 
 Now we are going to create embeddings.
 
     bash
-
     +++pip install Poetry
     poetry shell
     poetry install
@@ -74,7 +69,6 @@ Now we are going to create embeddings.
 Note: OpenAI rate limits embeddings on large amounts of data. If this applies to you, update your generate_datasource function as follows. This function is found in generate.py. This process can take a while as we wait three seconds between embedding batches to avoid hitting the rate limit. This is generally the case if you want to embed a book or multiple books.
 
     python
-
     +++import logging
     import time
     from dotenv import load_dotenv
@@ -117,7 +111,6 @@ Note: OpenAI rate limits embeddings on large amounts of data. If this applies to
 Everyone's local environments are different, so instead of troubleshooting - let's leverage the Docker Compose to deploy the frontend, backend, and Arize Phoenix public Docker Image.
 
     bash
-
     +++cd ..
     pip install docker-compose  
     docker-compose down
@@ -150,7 +143,6 @@ Docker Compose makes incredibly complicated hosting so easy. For this project - 
 cd into your folder that includes your ssh certificate and follow the steps below:
 
     bash
-
     +++chmod 400 "Phoenix.pem"
     scp -i "Phoenix.pem" Phoenix/openinference/python/examples/llama-index.zip  ubuntu@serverURL:~/
     ssh -i "Phoenix.pem" ubuntu@serverURL
@@ -190,5 +182,6 @@ Arize Phoenix is an innovative AI platform designed to empower businesses with a
 You can dive deeper into seeing the behavior on context the LLM goes through when asked - "Who is Harry Potter?".
 
 And that concludes our journey into the world of Arize Phoenix. Like the Order of the Phoenix, this platform is leading the charge in the fight against the dark arts of complex AI development. Mischief managed!
+
 
 
